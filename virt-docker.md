@@ -21,7 +21,7 @@ Hey, Netology
 https://hub.docker.com/username_repo  
 
 
-Решение:
+### Решение:
 https://hub.docker.com/repository/docker/antkonyakhin/docker-nginx
 
 
@@ -34,29 +34,29 @@ https://hub.docker.com/repository/docker/antkonyakhin/docker-nginx
 
 Сценарий:
 
-1. Высоконагруженное монолитное java веб-приложение;
+1. Высоконагруженное монолитное java веб-приложение;  
 Так приложение высоконагруженное, считаю, что здесь лучше подойжет физический хост, исключая слои виртуализации для надежности
-2. Nodejs веб-приложение;
-Хорошо подойдет для работы в контейнере docker
-3. Мобильное приложение c версиями для Android и iOS;
-для IOS есть Docker Desktop for Mac, для Android нет, нужно использовать эмулятор
+2. Nodejs веб-приложение;  
+Хорошо подойдет для работы в контейнере docker  
+3. Мобильное приложение c версиями для Android и iOS;  
+для IOS есть Docker Desktop for Mac, для Android нет, нужно использовать эмулятор  
 
-4. Шина данных на базе Apache Kafka;
-подойдет Docker, есть образ https://hub.docker.com/r/bitnami/kafka/
+4. Шина данных на базе Apache Kafka;  
+подойдет Docker, есть образ https://hub.docker.com/r/bitnami/kafka/  
 
-5. Elasticsearch кластер для реализации логирования продуктивного веб-приложения - три ноды elasticsearch, два logstash и две ноды kibana;
-Подойдет Docker, есть информация на сайте https://www.docker.elastic.co/
+5. Elasticsearch кластер для реализации логирования продуктивного веб-приложения - три ноды elasticsearch, два logstash и две ноды kibana;  
+Подойдет Docker, есть информация на сайте https://www.docker.elastic.co/  
 
-6. Мониторинг-стек на базе Prometheus и Grafana;
-для Prometheus подойдет Docker, есть документация https://prometheus.io/docs/prometheus/latest/installation/
-для Grafana подойдет Docker, есть документация https://grafana.com/docs/grafana/latest/installation/docker/
+6. Мониторинг-стек на базе Prometheus и Grafana;  
+для Prometheus подойдет Docker, есть документация https://prometheus.io/docs/prometheus/latest/installation/  
+для Grafana подойдет Docker, есть документация https://grafana.com/docs/grafana/latest/installation/docker/  
 
-7. MongoDB, как основное хранилище данных для java-приложения;
-подойдет docker, в который подключен volume
-https://hub.docker.com/_/mongo
+7. MongoDB, как основное хранилище данных для java-приложения;  
+подойдет docker, в который подключен volume  
+https://hub.docker.com/_/mongo  
 
-8. Gitlab сервер для реализации CI/CD процессов и приватный (закрытый) Docker Registry.
-подойдет Docker, есть документация https://docs.gitlab.com/ee/install/docker.html
+8. Gitlab сервер для реализации CI/CD процессов и приватный (закрытый) Docker Registry.  
+подойдет Docker, есть документация https://docs.gitlab.com/ee/install/docker.html  
 
 ### Задача 3
 - Запустите первый контейнер из образа centos c любым тэгом в фоновом режиме, подключив папку /data из текущей рабочей директории на хостовой машине в /data контейнера;  
